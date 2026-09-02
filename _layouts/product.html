@@ -1,0 +1,110 @@
+---
+layout: default
+---
+{% assign p = site.data.products | where: "id", page.product | first %}
+{% if p %}
+<div class="wrap">
+  <div class="product-hero">
+    {% if p.kind == 'app' %}
+    {% include crumbs.html l1="Apps" l1_url="/apps/" current=p.title %}
+    {% else %}
+    {% include crumbs.html l1="Games" l1_url="/games/" current=p.title %}
+    {% endif %}
+
+    <div class="banner">
+      <img src="{{ p.banner | relative_url }}" alt="{{ p.title }} key art">
+    </div>
+
+    <div class="product-head">
+      <h1>{{ p.title }}</h1>
+      {% if p.subtitle %}<p class="sub">{{ p.subtitle }}</p>{% endif %}
+      <ul class="pills">
+        <li class="pill status {{ p.status_kind }}">{{ p.status }}</li>
+        {% for plat in p.platforms %}<li class="pill">{{ plat }}</li>{% endfor %}
+      </ul>
+    </div>
+  </div>
+
+  <div class="product-body">
+    <div class="prose flush">
+      <p class="lede">{{ p.description }}</p>
+
+      {{ content }}
+
+      {% if p.features.size > 0 %}
+      <ul class="features">
+        {% for f in p.features %}
+        <li>
+          <span>{{ f.text }}</span>
+          {% if f.mp4 %}
+          <video muted loop autoplay playsinline controls preload="none"
+                 width="{{ f.w }}" height="{{ f.h }}"
+                 poster="{{ f.poster | relative_url }}"
+                 src="{{ f.mp4 | relative_url }}"></video>
+          {% endif %}
+        </li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+
+      {% if p.screenshots.size > 0 %}
+      <h2>Screenshots</h2>
+      {% if p.kind == 'app' %}{% assign fallback_alt = p.title | append: " screenshot" %}
+      {% else %}{% assign fallback_alt = p.title | append: " gameplay" %}{% endif %}
+      <div class="shots{% if p.shots_uncropped %} uncropped{% endif %}">
+        {% for shot in p.screenshots %}
+        {% assign src = shot.src | default: shot %}
+        <a class="shot" href="{{ src | relative_url }}" target="_blank" rel="noopener">
+          <img src="{{ src | relative_url }}" alt="{{ shot.alt | default: fallback_alt }}"
+               {% if shot.w %}width="{{ shot.w }}" height="{{ shot.h }}" {% endif %}loading="lazy">
+        </a>
+        {% endfor %}
+      </div>
+      <script src="{{ '/assets/js/gallery.js' | relative_url }}" defer></script>
+      {% endif %}
+    </div>
+
+    <aside class="aside">
+      {% if p.links.size > 0 %}
+      <div>
+        <h3>{{ p.cta | default: "Where to get it" }}</h3>
+        <div class="btns">
+          {% for l in p.links %}
+          <a class="btn{% if l.primary %} btn-primary{% endif %}" href="{{ l.url }}" rel="noopener">{{ l.label }}</a>
+          {% endfor %}
+        </div>
+      </div>
+      <hr class="sep">
+      {% endif %}
+
+      <dl>
+        {% if p.release %}
+        <div><dt>Release</dt><dd>{{ p.release }}</dd></div>
+        {% endif %}
+        {% if p.engine %}
+        <div><dt>Engine</dt><dd>{{ p.engine }}</dd></div>
+        {% endif %}
+        <div>
+          <dt>Platforms</dt>
+          <dd>{% if p.platform_note %}{{ p.platform_note }}{% else %}{{ p.platforms | join: ", " }}{% endif %}</dd>
+        </div>
+        <div>
+          <dt>Support</dt>
+          <dd><a href="mailto:{{ site.email }}">{{ site.email }}</a></dd>
+        </div>
+        {% if p.privacy_url %}
+        <div>
+          <dt>Privacy</dt>
+          <dd><a href="{{ p.privacy_url | relative_url }}">Privacy policy</a></dd>
+        </div>
+        {% endif %}
+      </dl>
+    </aside>
+  </div>
+</div>
+{% else %}
+<div class="wrap"><div class="prose">
+  <h1>Missing product data</h1>
+  <p>No entry with <code>id: {{ page.product }}</code> in <code>_data/products.yml</code>.</p>
+</div></div>
+{% endif %}

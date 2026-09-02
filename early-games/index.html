@@ -1,0 +1,24 @@
+---
+layout: default
+title: Early games
+description: >-
+  Mobile games from the libGDX years, kept online because they are where
+  Churros Game Studios started.
+---
+
+<div class="wrap">
+  <section class="section">
+    <div class="section-head">
+      {% include crumbs.html current="Early games" %}
+      <h1>Early games</h1>
+      <p>Four games, all shipped in 2015. They are off the stores and they are
+      not coming back, so this page is where they live now. The ideas in them
+      are another matter: there are some genuinely good ones here, and a fair
+      few will show up again in whatever we build next.</p>
+    </div>
+
+    <div class="grid">
+      {% for g in site.data.early_games %}{% include card.html p=g %}{% endfor %}
+    </div>
+  </section>
+</div>

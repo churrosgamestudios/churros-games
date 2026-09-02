@@ -1,0 +1,71 @@
+---
+layout: default
+title: Churros Game Studios
+description: >-
+  A small independent studio from Poland, self-publishing games and apps. Home of
+  Gravitten and Gravitten VR.
+---
+
+{% assign apps = site.data.products | where: "kind", "app" %}
+
+<div class="wrap">
+
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-mark">
+        <img src="{{ '/assets/logo.png' | relative_url }}" alt="Churros Game Studios logo" width="168" height="168">
+      </div>
+      <div class="hero-copy">
+        <h1>A small independent studio from Poland, self-publishing games and apps.</h1>
+        <p class="lede">We craft indie games in the Godot Engine and mobile apps for Android.</p>
+      </div>
+    </div>
+  </section>
+
+  <hr class="rule">
+
+  <section class="section" id="games">
+    <div class="section-head">
+      <div class="row">
+        <h2>Games</h2>
+        <a class="more" href="{{ '/games/' | relative_url }}">All games &rarr;</a>
+      </div>
+    </div>
+    {% include product-grid.html kind="game" %}
+  </section>
+
+  <section class="section" id="apps">
+    <div class="section-head">
+      <div class="row">
+        <h2>Apps</h2>
+        {% if apps.size > 0 %}<a class="more" href="{{ '/apps/' | relative_url }}">All apps &rarr;</a>{% endif %}
+      </div>
+    </div>
+    {% include product-grid.html kind="app" %}
+  </section>
+
+  <section class="section" id="early-games">
+    <div class="section-head">
+      <div class="row">
+        <h2>Early games</h2>
+        <a class="more" href="{{ '/early-games/' | relative_url }}">All early games &rarr;</a>
+      </div>
+      <p>Four mobile games from 2015, back in the libGDX days. Long gone from
+      the stores, but too good a story to drop.</p>
+    </div>
+  </section>
+
+  <hr class="rule">
+
+  <section class="section" id="community">
+    <div class="section-head">
+      <h2>Community &amp; support</h2>
+      <p>Our Discord is where people share levels built in the editor, play community levels and report bugs. Email works too.</p>
+    </div>
+    <div class="btns">
+      <a class="btn btn-primary" href="{{ site.discord }}" rel="noopener">Join the Discord</a>
+      <a class="btn" href="mailto:{{ site.email }}">{{ site.email }}</a>
+    </div>
+  </section>
+
+</div>

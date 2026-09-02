@@ -1,0 +1,4 @@
+{% assign items = site.data.products | where: "kind", include.kind %}
+<div class="grid">
+  {% for p in items %}{% include card.html p=p %}{% endfor %}
+</div>

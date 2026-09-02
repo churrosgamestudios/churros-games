@@ -1,0 +1,32 @@
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="{{ '/assets/logo.png' | relative_url }}" alt="" width="46" height="46">
+        <div>{{ site.title }}</div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Products</h4>
+        <ul>
+          {% for p in site.data.products %}
+          <li><a href="{{ p.url | relative_url }}">{{ p.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Community</h4>
+        <ul>
+          <li><a href="{{ '/about/' | relative_url }}">About the studio</a></li>
+          <li><a href="{{ site.discord }}" rel="noopener">Discord server</a></li>
+          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <p>&copy; {{ 'now' | date: "%Y" }} {{ site.title }}. All rights reserved.</p>
+    </div>
+  </div>
+</footer>

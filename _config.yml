@@ -1,0 +1,25 @@
+title: Churros Game Studios
+description: >-
+  A small independent studio from Poland, self-publishing games and apps. Indie
+  games in the Godot Engine, plus mobile apps for Android.
+email: churrosgamestudios@gmail.com
+discord: https://discord.gg/ncuc7FaM8a
+repo_url: https://github.com/churrosgamestudios/churros-games
+lang: en
+image: /assets/og-default.jpg
+
+twitter:
+  card: summary_large_image
+
+url: "https://churrosgamestudios.com"
+baseurl: ""
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+optional_front_matter:
+  enabled: false
+
+exclude:
+  - vendor
