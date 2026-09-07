@@ -1,0 +1,17 @@
+{% assign apps = site.data.products | where: "kind", "app" %}
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="{{ '/' | relative_url }}">
+      <img src="{{ '/assets/logo.png' | relative_url }}" alt="" width="34" height="34">
+      <span>{{ site.title }}</span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="{{ '/games/' | relative_url }}"{% if page.url contains '/games/' %} aria-current="page"{% endif %}>Games</a>
+      {% if apps.size > 0 %}
+      <a href="{{ '/apps/' | relative_url }}"{% if page.url contains '/apps/' %} aria-current="page"{% endif %}>Apps</a>
+      {% endif %}
+      <a href="{{ '/about/' | relative_url }}"{% if page.url contains '/about/' %} aria-current="page"{% endif %}>About</a>
+      <a class="ext" href="{{ site.discord }}" rel="noopener">Discord</a>
+    </nav>
+  </div>
+</header>

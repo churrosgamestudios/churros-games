@@ -1,0 +1,12 @@
+---
+layout: default
+---
+<div class="wrap">
+  <section class="section">
+    <div class="section-head">
+      {% include crumbs.html current=page.title %}
+      <h1>{{ page.title }}</h1>
+    </div>
+    {% include product-grid.html kind=page.kind %}
+  </section>
+</div>

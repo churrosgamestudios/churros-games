@@ -1,0 +1,246 @@
+- id: gravitten
+  kind: game
+  title: Gravitten
+  subtitle: Gravity-defying puzzle platformer
+  url: /gravitten/
+  status: Demo out now
+  status_kind: live
+  engine: Godot
+  platforms:
+    - Steam
+  banner: /assets/gravitten-banner.webp
+  summary: >-
+    Take control of Gravitten, the gravity-defying kitten, and master the
+    environment's shifting physics. Journey through 5 distinct biomes,
+    manipulating gravity and perspective to solve intricate puzzles.
+  description: >-
+    Gravitten is a logic defying puzzle platforming game with abstract levels,
+    where you have to use the ability to shift the 3D perspective to reach your
+    goal. Face insane spacial challenges, avoid obstacles, collect keys and find
+    exit. With added in-game level editor potential fun becomes endless!
+  features:
+    - text: Shift gravity within designated zones
+      mp4: /assets/clips/gravitten/gravity-change.mp4
+      poster: /assets/clips/gravitten/gravity-change.webp
+      w: 720
+      h: 460
+    - text: Use rotatable blocks and gravity switchers to alter perspective
+      mp4: /assets/clips/gravitten/gravity-switch.mp4
+      poster: /assets/clips/gravitten/gravity-switch.webp
+      w: 720
+      h: 460
+    - text: Navigate complex environments while avoiding traps and obstacles
+      mp4: /assets/clips/gravitten/obstacles.mp4
+      poster: /assets/clips/gravitten/obstacles.webp
+      w: 720
+      h: 460
+    - text: Built-in level editor to create, play and share custom levels online
+      mp4: /assets/clips/gravitten/editor.mp4
+      poster: /assets/clips/gravitten/editor.webp
+      w: 720
+      h: 460
+    - text: Each biome features unique gameplay mechanics
+  release: Demo out now. Full release planned for Q4 2026.
+  cta: Play the demo
+  links:
+    - label: Steam
+      url: https://store.steampowered.com/app/4199110/Gravitten
+      primary: true
+  screenshots:
+    - /assets/pc-screen1.webp
+    - /assets/pc-screen2.webp
+    - /assets/pc-screen3.webp
+    - /assets/pc-screen4.webp
+
+- id: gravitten-vr
+  kind: game
+  title: Gravitten VR
+  subtitle: Grab, climb, and turn your world upside down
+  url: /gravitten-vr/
+  status: In development
+  status_kind: dev
+  engine: Godot
+  platforms:
+    - SteamVR
+    - Meta Quest
+  banner: /assets/gravitten-vr-banner.webp
+  summary: >-
+    Grab, climb, and turn your world upside down! Become Gravitten, the
+    gravity-defying kitten, and master the environment's shifting physics.
+    Experience 5 distinct biomes where up is down and left is right.
+  description: >-
+    Gravitten VR is a logic-defying puzzle platformer. To reach your goal, you'll
+    need to think three-dimensionally, physically shift gravity, and twist your
+    perspective. Conquer spatial challenges, avoid traps, and collect keys to
+    find the exit.
+  features:
+    - text: Shift gravity within designated zones
+      mp4: /assets/clips/gravitten-vr/antigrav.mp4
+      poster: /assets/clips/gravitten-vr/antigrav.webp
+      w: 960
+      h: 480
+    - text: Climb your way across surfaces that keep changing which way is up
+      mp4: /assets/clips/gravitten-vr/climb.mp4
+      w: 960
+      h: 480
+      poster: /assets/clips/gravitten-vr/climb.webp
+    - text: Cross the gaps with a grapple hook
+      mp4: /assets/clips/gravitten-vr/grapple.mp4
+      w: 960
+      h: 480
+      poster: /assets/clips/gravitten-vr/grapple.webp
+    - text: Turn rotatable handles and gravity switchers with your own hands
+      mp4: /assets/clips/gravitten-vr/handle.mp4
+      w: 960
+      h: 480
+      poster: /assets/clips/gravitten-vr/handle.webp
+    - text: Each biome offers unique gameplay mechanics
+    - text: Built-in level editor to create and share custom levels
+  release: Planned for 2027.
+  cta: Wishlist
+  links:
+    - label: Steam
+      url: https://store.steampowered.com/app/4457820/Gravitten_VR/
+      primary: true
+    - label: Meta Store
+      url: https://vr.meta.me/s/2a5btTd1pOup7UG
+      primary: true
+  screenshots:
+    - /assets/vr-screen1.webp
+    - /assets/vr-screen2.webp
+    - /assets/vr-screen3.webp
+    - /assets/vr-screen4.webp
+
+- id: lucid-dream-inducer
+  kind: app
+  title: Lucid Dream Inducer
+  subtitle: Enter the dream.
+  url: /lucid-dream-inducer/
+  status: On Google Play
+  status_kind: live
+  platforms:
+    - Android
+    - Wear OS
+  banner: /assets/lucid-dream-inducer-banner.webp
+  summary: >-
+    The combination of one of the most popular techniques: WILD (Wake Induced
+    Lucid Dreams), with modern technology gave surprisingly good results. This is
+    the application written by a lucid dreamer for lucid dreamers.
+  description: >-
+    Lucid Dream Inducer is a modern extension of one of the most popular and most
+    respected techniques. Entering into the dream has never been so easy. Set the
+    application, comfortably lie down in your bed and start dreaming, and the
+    Lucid Dream Inducer will remind you that you are falling asleep. Your body
+    will drift away, but your mind will stay awake and lucid.
+  features:
+    - text: Instructions for WILD, WBTB (Wake Back To Bed) and Reverse Blinking
+    - text: Constant Lucidity - random notifications reminding you to run a reality test
+    - text: A standalone Wear OS app, and it works just as well on a phone
+  release: Available now on Google Play
+  privacy_url: /lucid-dream-inducer/privacy/
+  cta: Download
+  links:
+    - label: Google Play
+      url: https://play.google.com/store/apps/details?id=com.k560.luciddreaminducer
+      primary: true
+  shots_uncropped: true
+  screenshots:
+    - src: /assets/lucid-dream-inducer/phone-1.webp
+      w: 720
+      h: 1440
+      alt: The inducer settings - how many cues, how far apart, how strong
+    - src: /assets/lucid-dream-inducer/phone-2.webp
+      w: 720
+      h: 1440
+      alt: An induction running, with the screen safe to lock
+    - src: /assets/lucid-dream-inducer/phone-3.webp
+      w: 720
+      h: 1440
+      alt: Constant Lucidity, with reality check reminders through the day
+    - src: /assets/lucid-dream-inducer/wear-1.webp
+      w: 480
+      h: 480
+      alt: The watch laying out the session before it starts
+    - src: /assets/lucid-dream-inducer/wear-2.webp
+      w: 480
+      h: 480
+      alt: An induction running on the watch, counting the cues left
+
+- id: supreme-dream-journal
+  kind: app
+  title: Supreme Dream Journal
+  subtitle: Discover the world of dreams.
+  url: /supreme-dream-journal/
+  status: On Google Play
+  status_kind: live
+  platforms:
+    - Android
+    - Wear OS
+  banner: /assets/supreme-dream-journal-banner.webp
+  summary: >-
+    Keeping a dream journal has never been this simple, and it can turn you
+    into a regular lucid dreamer.
+  description: >-
+    Keeping a dream journal has never been this simple. Supreme Dream Journal
+    will help you remember your dreams and even become a regular lucid dreamer.
+  features:
+    - text: Rate your dream and label it with keywords and colours
+    - text: Search and filter your dreams
+    - text: Statistics, for the fun of it
+    - text: >-
+        A Wear OS companion app with a tile to dictate a dream straight from
+        your wrist
+    - text: App lock with a fingerprint or a PIN
+    - text: A small, elegant widget to add a dream in a hurry
+    - text: >-
+        Backup, so you never lose your record and can move it between devices
+    - text: Light and dark themes, in an interface built to stay out of the way
+  release: Available now on Google Play
+  privacy_url: /supreme-dream-journal/privacy/
+  cta: Download
+  links:
+    - label: Google Play
+      url: https://play.google.com/store/apps/details?id=com.k560.supremedreamjournal
+      primary: true
+  shots_uncropped: true
+  screenshots:
+    - src: /assets/supreme-dream-journal/phone-1.webp
+      w: 720
+      h: 1440
+      alt: The dream list, every entry rated and labelled
+    - src: /assets/supreme-dream-journal/phone-2.webp
+      w: 720
+      h: 1440
+      alt: A single dream, with its rating and labels above the text
+    - src: /assets/supreme-dream-journal/phone-3.webp
+      w: 720
+      h: 1440
+      alt: Editing a dream - title, date, rating and description
+    - src: /assets/supreme-dream-journal/phone-4.webp
+      w: 720
+      h: 1440
+      alt: The filter sheet, filtering by date, rating and tags
+    - src: /assets/supreme-dream-journal/phone-5.webp
+      w: 720
+      h: 1440
+      alt: The statistics screen, counting dreams and label usage
+    - src: /assets/supreme-dream-journal/phone-6.webp
+      w: 720
+      h: 1440
+      alt: The navigation drawer, open over the dream list
+    - src: /assets/supreme-dream-journal/wear-1.webp
+      w: 480
+      h: 480
+      alt: The Wear OS tile asking what you dreamt
+    - src: /assets/supreme-dream-journal/wear-2.webp
+      w: 480
+      h: 480
+      alt: Picking labels for a dream on the watch
+    - src: /assets/supreme-dream-journal/wear-3.webp
+      w: 480
+      h: 480
+      alt: Dictating a dream straight into the watch
+    - src: /assets/supreme-dream-journal/wear-4.webp
+      w: 480
+      h: 480
+      alt: The watch confirming the dream before it saves

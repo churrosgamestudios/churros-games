@@ -1,0 +1,114 @@
+- id: dont-scream
+  title: Don't Scream
+  url: /early-games/dont-scream/
+  subtitle: shhh....
+  year: 2015
+  engine: libGDX
+  status: Delisted
+  platforms:
+    - Android
+  summary: >-
+    Atmospheric mobile arcade game that will send shivers down your spine.
+  description: >-
+    Playing a horror game in the middle of the night was fun until you started
+    to feel a strange, cold breath on the back of your neck...
+  banner: /assets/libgdx/dont_scream/dont-scream-banner.webp
+  screenshots:
+    - /assets/libgdx/dont_scream/dont-scream-1.webp
+    - /assets/libgdx/dont_scream/dont-scream-2.webp
+    - /assets/libgdx/dont_scream/dont-scream-3.webp
+    - /assets/libgdx/dont_scream/dont-scream-4.webp
+  body:
+    - >-
+      Atmospheric mobile arcade game that will send shivers down your spine. Try
+      to stay sane as long as you can. Just stay quiet and you'll be fine.
+    - >-
+      And remember - when reality becomes overwhelming, you can always try
+      closing your eyes.
+
+- id: steam-hero
+  title: "Steam Hero: Rope of Hope"
+  url: /early-games/steam-hero/
+  subtitle: Hook, swing, repeat.
+  year: 2015
+  engine: libGDX
+  status: Delisted
+  platforms:
+    - Android
+  summary: >-
+    Swing from one platform to the next on a single rope. Simple yet addictive.
+  description: >-
+    Equipped with nothing more than a single rope, swing from one platform to
+    another.
+  banner: /assets/libgdx/steam_hero/steam-hero-banner.webp
+  screenshots:
+    - /assets/libgdx/steam_hero/steam-hero-1.webp
+    - /assets/libgdx/steam_hero/steam-hero-2.webp
+    - /assets/libgdx/steam_hero/steam-hero-3.webp
+    - /assets/libgdx/steam_hero/steam-hero-4.webp
+  body:
+    - >-
+      Hold your finger to move the grapple point, release to swing. Stick with
+      the crows - they are said to spawn bonuses. But be careful! If the rope is
+      too short or too long, you will fall.
+    - Simple yet addictive, just try it!
+    - >-
+      Compete with your friends and people from all over the world through
+      online leaderboards and achievements.
+    - Collect coins to unlock additional backgrounds and characters.
+    - Play in headphones for best experience.
+
+- id: miners-dive
+  title: Miner's Dive
+  url: /early-games/miners-dive/
+  subtitle: Jump to dive, dive to mine, mine to survive!
+  year: 2015
+  engine: libGDX
+  status: Delisted
+  platforms:
+    - Android
+  summary: >-
+    Mine your way down with a single pickaxe and see how deep you can get.
+  description: >-
+    From how high can you dive? Equipped with nothing more than a single
+    pickaxe, mine through the world.
+  banner: /assets/libgdx/miners_dive/miners-dive-banner.webp
+  screenshots:
+    - /assets/libgdx/miners_dive/miners-dive-1.webp
+    - /assets/libgdx/miners_dive/miners-dive-2.webp
+    - /assets/libgdx/miners_dive/miners-dive-3.webp
+  body:
+    - >-
+      Watch out for flying stones and planks. Who knows what you will dig out?
+    - >-
+      Compete with your friends and people from all over the world through
+      online leaderboards.
+
+- id: steamcopter
+  title: SteamCopter
+  url: /early-games/steamcopter/
+  subtitle: How far can you fly?
+  year: 2015
+  engine: libGDX
+  status: Delisted
+  platforms:
+    - Android
+  summary: >-
+    Fly a steampunk helicopter through five worlds and see how far you get.
+  description: Five Worlds. One Steampunk Helicopter.
+  banner: /assets/libgdx/steamcopter/steamcopter-banner.webp
+  screenshots:
+    - /assets/libgdx/steamcopter/steamcopter-1.webp
+    - /assets/libgdx/steamcopter/steamcopter-2.webp
+    - /assets/libgdx/steamcopter/steamcopter-3.webp
+  body:
+    - >-
+      SteamCopter is a simple game, which you won't easily get bored with. Grab
+      the reins and explore five colorful worlds. Avoid obstacles and monsters
+      to fly as far as possible. Collect stars to get the highest score.
+    - And don't give up - you can always try again!
+  bullets:
+    - Available in two modes, HD and SD (optimized for slower devices)
+    - >-
+      Fully localized (English, French, German, Lithuanian, Polish, Russian,
+      Spanish)

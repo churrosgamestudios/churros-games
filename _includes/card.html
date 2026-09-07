@@ -1,0 +1,15 @@
+{% assign p = include.p %}
+<a class="card" href="{{ p.url | relative_url }}">
+  <div class="card-media">
+    <img src="{{ p.banner | relative_url }}" alt="{{ p.title }} key art" loading="lazy">
+  </div>
+  <div class="card-body">
+    <h3>{{ p.title }}</h3>
+    {% if p.subtitle %}<p class="sub">{{ p.subtitle }}</p>{% endif %}
+    <p>{{ p.summary }}</p>
+    <ul class="pills">
+      <li class="pill status {{ p.status_kind }}">{{ p.status }}</li>
+      {% for plat in p.platforms %}<li class="pill">{{ plat }}</li>{% endfor %}
+    </ul>
+  </div>
+</a>
